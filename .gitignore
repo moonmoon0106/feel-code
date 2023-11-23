@@ -1,0 +1,47 @@
+# macOS 系统临时文件
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 图标必须以制表符结束
+Icon
+
+# Thumbnails
+._*
+
+# 文件夹属性
+.DS_Store?
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# 自动保存的文档
+*.swp
+*~.nib
+
+# .lock 文件
+*.lock
+
+# 生成的文件
+*.gch
+*.pch
+
+# Profile data
+*.orig
+
+# OS X Patch files
+*.rej
+
+# Xcode
+*.xcuserstate
+
+# Derived Data
+DerivedData
+
+# Backup & Bookmarks
+*.backup
+*.marks
