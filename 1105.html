@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./1105.css">
+</head>
+<body>
+    <nav>
+        <div class="links">
+            <div class="logo"></div>
+            <div class="link">Microsoft365</div>
+            <div class="link">teams</div>
+            <div class="link">windows</div>
+            <div class="link">surface</div>
+            <div class="link">xbox</div>
+            <div class="link">支援</div>
+        </div>
+        <div class="functions">
+            <div class="all">
+                <span>所有Microsoft</span>
+                <div class="icon"></div>
+            </div>
+            <div class="function">
+                <span>搜尋</span>
+                <div class="icon search"></div>
+            </div>
+            <div class="function">
+                <span>購物車</span>
+                <div class="icon shopping"></div
+                    ></div>
+            <div class="function">
+                <span>登入</span>
+                <div class="icon login"></div>
+            </div>
+        </div>
+        <!-- 因為在RWD的時候，只有"所有microsoft"的字不會馬上消失，所以他的div另外命名叫all，其他的就一律叫做function，以便後續處理 -->
+    </nav>
+
+    <main>
+        <section class="banner">
+            <img src="./img/XS.avif" class="banner-XS">
+            <img src="./img/S.avif" class="banner-S">
+            <img src="./img/M.avif" class="banner-M">
+            <img src="./img/L.webp" class="banner-L">
+            <img src="./img/XL.webp" class="banner-XL">
+            <!-- 在這裡用img屬性，而不是div，因為img會以圖片本身去做縮放，所以只要設定寬或高其中一邊，另一邊會自動等比例去縮放出來，以便在做RWD的時候比較美觀 -->
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
