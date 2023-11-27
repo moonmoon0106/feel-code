@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* 初始化，將所有預設的padding、margin移除，並自動算padding高寬  */
+
+/* body{
+    width: 1280px;
+    height: 1024px;
+} */
+nav{
+    width: 300px;
+    height: 100%;
+    background-color: lavender;
+    padding-top: 60px;
+    float: left;
+
+}
+
+nav .container{
+    width: 100%;
+    height: 100%;
+    /* background-color: lavender; */
+    position: relative;
+
+}
+
+nav .logo{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: calc(50% - 40px);
+    /* 置中是父層的一半減自己的一半 */
+    background-color: rosybrown;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    color: snow;
+}
+
+nav .links {
+    width: 180px;
+    height: 100px;
+    background-color: papayawhip;
+
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+
+    position: absolute;
+    left: calc(50% - 90px);
+    top: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+main{
+    float: right;
+    width: calc(100% - 300px);
+    height: 100%;
+    background-color: mistyrose;
+    padding: 150px 60px;
+}
+main .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* 在flex中可以自動換行 */
+}
+
+main .container div{
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 400PX;
+    color: darkslategray;
+}
+.x{
+width: 100%;
+
+background-image: url(https://media.newyorker.com/photos/62c4511e47222e61f46c2daa/master/w_1920,c_limit/shouts-animals-watch-baby-hemingway.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.y{
+    width: 50%;
+    
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Giant_Panda_2004-03-2.jpg/1280px-Giant_Panda_2004-03-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.z{
+    width: 50%;
+    
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/1280px-Killerwhales_jumping.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+main .container div:hover{
+    background-size: 200%;
+    color: whitesmoke;
+}
+
+

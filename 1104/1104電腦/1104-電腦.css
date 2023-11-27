@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* 初始化，將所有預設的padding、margin移除，並自動算padding高寬  */
+
+nav{
+    width: 200px;
+    height: 100vh;
+    background-color: lavender;
+    padding-top: 60px;
+    float: left;
+
+}
+
+nav .container{
+    width: 100%;
+    height: 100%;
+    /* background-color: lavender; */
+    position: relative;
+
+}
+
+nav .logo{
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left: calc(50% - 28px);
+    /* 置中是父層的一半減自己的一半 */
+    background-color: rosybrown;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 56px;
+    color: snow;
+}
+
+nav .links {
+    width: 180px;
+    height: 100px;
+    background-color: papayawhip;
+    font-size: 18px;
+    line-height: 30px;
+    position: absolute;
+    left: calc(50% - 90px);
+    top: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+main{
+    float: right;
+
+    width: calc(100% - 200px);
+    height: 100vh;
+    padding: 10% 20%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 比較快的做法，因為container裡面只有xyz這三個元素 */
+/* 統一一起下指令在div，有特殊需求的再另外用class補充在下面(下面的權重大) */
+main .container div{
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: MistyRose;
+    font-size: 72px;
+    line-height: 196px;
+    text-align: center;
+    color: lightcyan;
+    font-weight: bold;
+
+
+
+}
+
+main .container .x{
+
+    background-image: url(https://media.newyorker.com/photos/62c4511e47222e61f46c2daa/master/w_1920,c_limit/shouts-animals-watch-baby-hemingway.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main .container .y{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Giant_Panda_2004-03-2.jpg/1280px-Giant_Panda_2004-03-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: whitesmoke;
+}
+main .container .z{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/1280px-Killerwhales_jumping.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main .container div:hover{
+    color: darkslategray;
+    /* background-size: 100%; */
+}

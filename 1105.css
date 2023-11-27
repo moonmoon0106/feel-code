@@ -143,12 +143,12 @@ main .banner img{
     }
 }
 @media (min-width:1084px) and (max-width:1399px){
-    main .banner .banner-L{
+    main .banner .banner-l{
         display: block;
     }
 }
 @media (min-width:1400px) and (max-width:1778px){
-    main .banner .banner-XL{
+    main .banner .banner-l{
         display: block;
     }
 }

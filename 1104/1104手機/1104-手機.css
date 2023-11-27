@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* 初始化，將所有預設的padding、margin移除，並自動算padding高寬  */
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #ecffb3;
+    padding: 14px 17px;
+}
+
+nav .container{
+/* 因為後面logo需要置中，所以這裡先用relative */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+}
+
+nav .logo{
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top:calc(50% - 28px);
+    left: calc(50% - 28px);
+    /* 置中是自己的一半減父層的一半 */
+    background-color: rosybrown;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 56px;
+    color: snow;
+}
+
+nav .link{
+    display: none;
+}
+
+nav .links{
+    width: 42px;
+    height: 52px;
+    background-color: papayawhip;
+}
+
+nav .links:hover{
+    width: 150px;
+    height: 200px;
+    padding-top: 20px;
+    border-radius: 5px;
+}
+
+nav .links:hover .link{
+/* 當links被hover的時候，它裡面的link要做反應 */
+    display: block;
+    /* 這裡用display:block，將原本的display:none蓋過 */
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 20px;
+    background-color: coral;
+    color: floralwhite;
+}
+nav .links:hover .link:hover{
+    background-color: floralwhite;
+    color: coral;
+}
+nav .links:hover .link:active{
+    color: tan;
+}
+
+main{
+    width: 100%;
+    height: calc(100vh- 80px);
+    background-color: bisque;
+}
+
+main .container{
+    width: 100%;
+}
+
+
+/* 比較快的做法，因為container裡面只有xyz這三個元素 */
+/* 統一一起下指令在div，有特殊需求的再另外用class補充在下面(下面的權重大) */
+main .container div{
+    width: 100%;
+    height: 196px;
+    background-color: MistyRose;
+    font-size: 72px;
+    line-height: 196px;
+    text-align: center;
+    color: lightcyan;
+    font-weight: bold;
+}
+
+main .container .x{
+    background-image: url(https://media.newyorker.com/photos/62c4511e47222e61f46c2daa/master/w_1920,c_limit/shouts-animals-watch-baby-hemingway.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main .container .y{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Giant_Panda_2004-03-2.jpg/1280px-Giant_Panda_2004-03-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: whitesmoke;
+}
+main .container .z{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/1280px-Killerwhales_jumping.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main .container div:hover{
+    color: darkslategray;
+    background-size: 100%;
+    /* height: 250px; */
+}

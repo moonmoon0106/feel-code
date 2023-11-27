@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 100%;
+            height: 200px;
+            background-color: rgb(127, 255, 170);
+        }
+        @media(max-width:800px){
+            .box{
+            background-color: rgb(255, 192, 137);
+        }
+        /* 當螢幕寬度小於800px，box就變成橘色 */
+        } 
+
+        @media(min-width:1200px){
+            .box{
+            background-color: rgb(255, 167, 252);
+        }
+        /* 當螢幕寬度大於1200px，box就變成紫色 */
+        } 
+    </style>
+
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
