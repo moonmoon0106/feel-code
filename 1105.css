@@ -1,154 +1,152 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body{
-    height: 2000px;
-    font-family:'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif
+body {
+  height: 2000px;
+  font-family: 'Segoe UI', SegoeUI, 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
 }
 
-nav{
-    max-width: 1400px;
-    width: 100%;
-    height: 56px;
-    background-color: LavenderBlush;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+nav {
+  max-width: 1400px;
+  width: 100%;
+  height: 56px;
+  background-color: LavenderBlush;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-nav .links{
-    width: 560px;
-    height: 100%;
-    padding-left: 10px;
-    
-    background-color: PaleVioletRed;
-    font-size: 13px;
+nav .links {
+  width: 560px;
+  height: 100%;
+  padding-left: 10px;
 
-    display: flex;
-    align-items: center;
-    /* 垂直置中 */
-    justify-content: space-between;
-    /* 等距水平排列 */
-    
+  background-color: PaleVioletRed;
+  font-size: 13px;
+
+  display: flex;
+  align-items: center;
+  /* 垂直置中 */
+  justify-content: space-between;
+  /* 等距水平排列 */
 }
 
-nav .links .logo{
-    width: 110px;
-    height: 25px;
-    background-image: url("./img/logo.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+nav .links .logo {
+  width: 110px;
+  height: 25px;
+  background-image: url('./img/logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-nav .functions{
-    /* nav的右半邊 */
-    width: 400px;
-    height: 100%;
-    background-color: Thistle;
-    padding-right: 8px;
+nav .functions {
+  /* nav的右半邊 */
+  width: 400px;
+  height: 100%;
+  background-color: Thistle;
+  padding-right: 8px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    font-size: 13px;
+  font-size: 13px;
 }
 
-nav .functions .all{
-    /* 所有Microsoft */
-    width: 145px;
-    height: 48px;
+nav .functions .all {
+  /* 所有Microsoft */
+  width: 145px;
+  height: 48px;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-nav .functions .all .icon{
-    width: 17px;
-    height: 25px;
-    /* 加大高度，向下對齊，才能夠稍微偏下 */
+nav .functions .all .icon {
+  width: 17px;
+  height: 25px;
+  /* 加大高度，向下對齊，才能夠稍微偏下 */
 
-    background-image: url('./img/arrow-down.svg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
+  background-image: url('./img/arrow-down.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-nav .functions .function{
-    /* 除了"所有Microsoft"以外的 */
-    /* width: 90px; */
-    height: 48px;
+nav .functions .function {
+  /* 除了"所有Microsoft"以外的 */
+  /* width: 90px; */
+  height: 48px;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-nav .functions .function .icon{
-    /* 全部的icon */
-    width: 20px;
-    height: 20px;
-    margin-left: 4px;
+nav .functions .function .icon {
+  /* 全部的icon */
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-@media (max-width
-:1400px) {
-    nav .functions .function span{
-        display: none;
-    }
-}
-
-
-nav .functions .function .search{
-    margin-right: 30px;
-    background-image: url('./img/search.svg');
-}
-nav .functions .function .shopping{
-    background-image: url('./img/cart3.svg');
-}
-nav .functions .function .login{
-    width: 33px;
-    height: 33px;
-    margin-left: 12px;
-
-    background-image: url('./img/user.svg');
-    /* 這個比較大，另外寫 */
-}
-
-main .banner img{
-    width: 100%;
+@media (max-width: 1400px) {
+  nav .functions .function span {
     display: none;
+  }
 }
 
-@media (max-width:539px){
-    main .banner .banner-xs{
-        display: block;
-    }
+nav .functions .function .search {
+  margin-right: 30px;
+  background-image: url('./img/search.svg');
 }
-@media (min-width:540px) and (max-width:767px){
-    main .banner .banner-s{
-        display: block;
-    }
+nav .functions .function .shopping {
+  background-image: url('./img/cart3.svg');
 }
-@media (min-width:768px) and (max-width:1083px){
-    main .banner .banner-m{
-        display: block;
-    }
+nav .functions .function .login {
+  width: 33px;
+  height: 33px;
+  margin-left: 12px;
+
+  background-image: url('./img/user.svg');
+  /* 這個比較大，另外寫 */
 }
-@media (min-width:1084px) and (max-width:1399px){
-    main .banner .banner-l{
-        display: block;
-    }
+
+main .banner img {
+  width: 100%;
+  display: none;
 }
-@media (min-width:1400px) and (max-width:1778px){
-    main .banner .banner-l{
-        display: block;
-    }
+
+@media (max-width: 539px) {
+  main .banner .banner-XS {
+    display: block;
+  }
+}
+@media (min-width: 540px) and (max-width: 767px) {
+  main .banner .banner-S {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1083px) {
+  main .banner .banner-M {
+    display: block;
+  }
+}
+@media (min-width: 1084px) and (max-width: 1399px) {
+  main .banner .banner-L {
+    display: block;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1778px) {
+  main .banner .banner-XL {
+    display: block;
+  }
 }
