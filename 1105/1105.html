@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./1105.css">
+</head>
+<body>
+    <nav>
+        <div class="links">
+            <div class="logo"></div>
+            <div class="link">Microsoft365</div>
+            <div class="link">teams</div>
+            <div class="link">windows</div>
+            <div class="link">surface</div>
+            <div class="link">xbox</div>
+            <div class="link">支援</div>
+        </div>
+        <div class="functions">
+            <div class="all">
+                <span>所有Microsoft</span>
+                <div class="icon"></div>
+            </div>
+            <div class="function">
+                <span>搜尋</span>
+                <div class="icon search"></div>
+            </div>
+            <div class="function">
+                <span>購物車</span>
+                <div class="icon shopping"></div
+                    ></div>
+            <div class="function">
+                <span>登入</span>
+                <div class="icon login"></div>
+            </div>
+        </div>
+        <!-- 因為在RWD的時候，只有"所有microsoft"的字不會馬上消失，所以他的div另外命名叫all，其他的就一律叫做function，以便後續處理 -->
+    </nav>
+
+    <main>
+        <div class="banner">
+            <img src="./img/XS.avif" class="banner-xs">
+            <img src="./img/S.avif" class="banner-s">
+            <img src="./img/M.avif" class="banner-m">
+            <img src="./img/L.webp" class="banner-l">
+            <img src="./img/XL.webp" class="banner-xl">
+            <!-- 在這裡用img屬性，而不是div，因為img會以圖片本身去做縮放，所以只要設定寬或高其中一邊，另一邊會自動等比例去縮放出來，以便在做RWD的時候比較美觀 -->
+
+            <div class="content">
+                <div class="newArrival">新上市</div>
+                <div class="design">專為今天和明天的生活而設計</div>
+                <div class="win11"> 新一代遊戲、您的目標、親朋好友。Window11是為了讓您更貼近所喜愛的一切。</div>
+                <div class="check">查看您的電腦是否準備就緒></div>
+            </div>
+        </div>
+
+        <div class="choose">
+            <a href="https://www.microsoft.com/zh-tw/"  class="link">
+                <div class="item">
+                    <img src="./img/windows.svg" alt="win11">
+                    <span>選擇您的Microsoft365</span>
+                </div>
+            </a>
+            <a href="https://www.microsoft.com/zh-tw/"  class="link">
+                <div class="item">
+                    <img src="./img/surface.svg" alt="surface">
+                    <span>選購SurFace裝置</span>
+                </div>
+            </a>
+            <a href="https://www.microsoft.com/zh-tw/"  class="link">
+                <div class="item">
+                    <img src="./img/windows.svg" alt="win11">
+                    <span>取得Windows11</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+        <div class="product">
+            <img src="./img/Xbox-X.webp" alt="">
+            <div class="title">Xbox Series X</div>
+            <div class="content">有史以來最快、最強大的 Xbox。</div>
+            <a href="https://www.microsoft.com/zh-tw/"class="link">選購 Xbox Series X ></a>
+        </div>
+        <div class="product">
+            <img src="./img/Xbox-S.webp" alt="">
+            <div class="title">Xbox Series S</div>
+            <div class="content"> 有史以來外型最小的 Xbox 所帶來的新一代效能。 </div>
+            <a href="https://www.microsoft.com/zh-tw/" class="link">選購 Xbox Series S ></a>
+        </div>
+        <div class="product">
+            <img src="./img/surface.avif" alt="">
+            <div class="newArrival">新上市</div>
+            <div class="title">Surface Laptop Studio 2</div>
+            <div class="content"> 這台多功能的筆記型電腦配備頂尖的設計和驚人的效能，為您帶來創意和娛樂。 </div>
+            <a href="https://www.microsoft.com/zh-tw/"class="link">深入了解 ></a>
+        </div>
+        <div class="product">
+            <img src="./img/365.avif" alt="">
+            <div class="title">透過 Microsoft 365 善用每一天</div>
+            <div class="content">取得線上保護、安全的雲端儲存空間，以及專為滿足需求而設計的創新應用程式，全都在一個方案中。</div>
+            <a href="https://www.microsoft.com/zh-tw/"class="link">適合 1 人使用 ></a>
+            <a href="https://www.microsoft.com/zh-tw/"class="link">最多可供 6 人使用 ></a>
+        </div>
+        </div>
+
+        <div class="highlight">
+        <img src="./img/HL-XL.jpg" class="highlight">
+        <!-- <img src="./img/S.avif" class="banner-s">
+        <img src="./img/M.avif" class="banner-m">
+        <img src="./img/L.webp" class="banner-l">
+        <img src="./img/XL.webp" class="banner-xl"> -->
+
+        <div class="content">
+            <div class="title">Xbox Game Pass<br>Ultimate</div>
+            <div class="intro">在首發日遊玩新遊戲。再加上在主機和電腦上與朋友一起享受數百款高品質遊戲。</div>
+            <div class="join">立即加入</div>
+        </div>
+        </div>
+
+        <div class="forBusiness">適用於商務</div>
+        <div class="business">
+        <div class="product">
+            <img src="./img/ForBusiness.avif" alt="">
+            <div class="title">適用於商務的 Surface</div>
+            <div class="content">無論從事哪種工作，都有一款有助於成功的 Surface。</div>
+            <a href="https://www.microsoft.com/zh-tw/"class="link">立即選購 ></a>
+        </div>
+        <div class="product">
+            <img src="./img/freeTeams.webp" alt="">
+            <div class="title">免費取得 Microsoft Teams</div>
+            <div class="content">線上會議、聊天和共用雲端儲存空間，盡在一處。</div>
+            <a href="https://www.microsoft.com/zh-tw/"class="link">免費註冊 ></a>
+        </div>
+        <div class="product">
+            <img src="./img/VS2022.webp" alt="">
+            <div class="title">Visual Studio 2022</div>
+            <div class="content">取得最全面的 IDE，讓 .NET 和 C++ 開發人員在 Windows 上建置 Web、雲端、電腦、行動應用程式、服務和遊戲。</div>
+            <a href="https://www.microsoft.com/zh-tw/"class="link">下載 Visual Studio 2022 ></a>
+        </div>
+        <div class="product">
+            <img src="./img/365drive.webp" alt="">
+            <div class="title">歡迎使用 Windows 365 雲端電腦</div>
+            <div class="content">從 Microsoft 雲端安全地將您的 Windows 體驗串流到任何裝置。</div>
+            <a href="https://www.microsoft.com/zh-tw/"class="link">立即下載 ></a>
+        </div>
+        </div>
+        
+        <div class="fallow">
+            <span>關注 Microsoft</span>
+            <div class="icon fb"></div>
+            <div class="icon yt"></div>
+        </div>
+        <div class="tax">台灣微軟股份有限公司統編 23525730</div>
+
+        <div class="toTop">
+            <span> ↑  回到頁首</span>
+        </div>
+    </main>
+
+    <footer>
+        <div class="about">
+            <div class="content news">
+                <span>最新動向</span>
+                <a href="https://www.microsoft.com/zh-tw/" class="link">Microsoft 365</a>
+                <a href="https://www.microsoft.com/zh-tw/" class="link">Surface Go</a>
+                <a href="https://www.microsoft.com/zh-tw/" class="link">Surface Book 2</a>
+                <a href="https://www.microsoft.com/zh-tw/" class="link">Surface Pro</a>
+                <a href="https://www.microsoft.com/zh-tw/" class="link">Windows 11 應用程式</a>
+            </div>
+            <div class="content store">
+                <span>Microsoft Store</span>
+                <a href="https://www.microsoft.com/zh-tw/" class="link">帳戶設定檔</a>
+                <a href="https://www.microsoft.com/zh-tw/" class="link">下載中心</a>
+                <a href="https://www.microsoft.com/zh-tw/" class="link">Microsoft Store 支援</a>
+                <a href="https://www.microsoft.com/zh-tw/" class="link"></a>
+                <a href="https://www.microsoft.com/zh-tw/" class="link"></a>
+
+                
+
+
+退貨/退款
+訂單追蹤
+            </div>
+            <div class="content educate"></div>
+            <div class="content business"></div>
+            <div class="content Develop"></div>
+            <div class="content company"></div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- 微軟官網 https://www.microsoft.com/zh-tw/ -->
