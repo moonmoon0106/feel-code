@@ -327,7 +327,7 @@ main .card{
   display: flex;
   justify-content: space-between;
 }
-@media (min-width: 540px) and (max-width: 1083px){
+@media (max-width: 1083px){
   main .card {
     flex-wrap: wrap;
   }
@@ -339,9 +339,14 @@ main .card .product{
   /* width: calc(50% - 18px); */
   height: 500px;
 }
-@media (min-width: 540px) and (max-width: 1083px){
+@media (max-width: 1083px){
   main .card .product{
     width: calc(50% - 18px);
+  }
+}
+@media (max-width: 540px){
+  main .card .product{
+    width: calc(100% - 18px);
   }
 }
 
@@ -392,6 +397,37 @@ main .highlight{
   margin: auto;
   position: relative;
 }
+main .highlight img {
+  width: 100%;
+  display: none;
+}
+@media (max-width: 539px) {
+  main .highlight .highlight-xs {
+    display: block;
+  }
+}
+@media (min-width: 540px) and (max-width: 767px) {
+  main .highlight .highlight-s {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1083px) {
+  main .highlight .highlight-m {
+    display: block;
+    padding-bottom: 200px;
+    /* background-color: darkcyan; */
+  }
+}
+@media (min-width: 1084px) and (max-width: 1399px) {
+  main .highlight .highlight-l {
+    display: block;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1778px) {
+  main .highlight .highlight-xl {
+    display: block;
+  }
+}
 
 main .highlight .content{
   width: 350px;
@@ -404,15 +440,43 @@ main .highlight .content{
 
   color: white;
 }
+@media (min-width: 860px) and (max-width: 1083px) {
+  main .highlight .content{
+    width: 828px;
+    height: 228px;
+    padding: 24px;
+
+    top: 85%;
+    left: 3%;
+
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
 main .highlight .content .title{
   font-size: 2.3125rem;
   font-weight: 500;
   margin-bottom: 16px;
 }
+@media (min-width: 860px) and (max-width: 1083px){
+  main .highlight .content .title{
+    font-size: 1.5rem;
+    color: black;
+  }
+}
+
 main .highlight .content .intro{
   margin-bottom: 24px;
   width: 416px;
 }
+@media (min-width: 860px) and (max-width: 1083px){
+  main .highlight .content .intro{
+    color: black;
+    width: 100%;
+  }
+}
+
 main .highlight .content .join{
   width: 90px;
   height: 40px;
@@ -447,7 +511,7 @@ main .business{
   display: flex;
   justify-content: space-between;
 }
-@media (min-width: 540px) and (max-width: 1083px){
+@media (max-width: 1083px){
   main .business {
     flex-wrap: wrap;
   }
@@ -458,9 +522,14 @@ main .business .product{
   height: 500px;
   /* background-color: darkorange; */
 }
-@media (min-width: 540px) and (max-width: 1083px){
+@media (max-width: 1083px){
   main .business .product{
     width: calc(50% - 18px);
+  }
+}
+@media (max-width: 540px){
+  main .business .product{
+    width: calc(100% - 18px);
   }
 }
 
